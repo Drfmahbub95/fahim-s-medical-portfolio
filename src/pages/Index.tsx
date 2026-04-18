@@ -17,7 +17,7 @@ const Index = () => {
     jobTitle: "Doctor & Clinical Researcher",
     email: "mailto:fmahbub96@gmail.com",
     description:
-      "British GMC-registered doctor and clinical researcher in cardiovascular and metabolic medicine.",
+      "GMC-registered doctor and clinical researcher in cardiovascular and metabolic medicine, based in Bangladesh and licensed to practise in the UK.",
     identifier: "GMC 7880554",
     alumniOf: [
       { "@type": "CollegeOrUniversity", name: "Rangpur Medical College, Rajshahi University" },
