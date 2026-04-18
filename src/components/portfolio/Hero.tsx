@@ -1,6 +1,9 @@
 import heroBg from "@/assets/hero-bg.jpg";
-import { Stethoscope, Mail, MapPin, BadgeCheck } from "lucide-react";
+import { Stethoscope, Mail, MapPin, BadgeCheck, GraduationCap, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+const SCHOLAR_URL = "https://scholar.google.com/";
+const CV_URL = "/cv.pdf";
 
 const Hero = () => {
   return (
@@ -52,6 +55,18 @@ const Hero = () => {
           <div className="mt-10 flex flex-wrap gap-4">
             <Button asChild size="lg" variant="hero">
               <a href="#research">View Research</a>
+            </Button>
+            <Button asChild size="lg" variant="heroOutline">
+              <a href={CV_URL} download>
+                <Download className="mr-2 h-4 w-4" />
+                Download CV
+              </a>
+            </Button>
+            <Button asChild size="lg" variant="heroOutline">
+              <a href={SCHOLAR_URL} target="_blank" rel="noreferrer">
+                <GraduationCap className="mr-2 h-4 w-4" />
+                Google Scholar
+              </a>
             </Button>
             <Button asChild size="lg" variant="heroOutline">
               <a href="mailto:fmahbub96@gmail.com">
