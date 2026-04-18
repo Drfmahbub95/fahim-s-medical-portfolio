@@ -19,7 +19,7 @@ const Certifications = () => (
     <div className="container-prose">
       <SectionHeading
         eyebrow="Professional Development"
-        title="Certifications"
+        title="Training & Certifications"
         description="Specialised clinical training that complements my medical practice."
       />
 
