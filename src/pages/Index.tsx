@@ -41,9 +41,9 @@ const Index = () => {
         <Hero />
         <About />
         <Education />
-        <Certifications />
         <Research />
         <Publications />
+        <Certifications />
         <Experience />
         <Skills />
         <Contact />
