@@ -5,7 +5,7 @@ const pubs = [
   {
     title:
       "Global Prevalence of Metabolic Syndrome in Adults and Its Association with Lifestyle Factors: A Systematic Review and Meta-Analysis",
-    journal: "Cureus International Journal",
+    journal: "Cureus International Journal · Indexed in PubMed",
     role: "Co-author",
   },
   {
