@@ -1,16 +1,54 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/portfolio/Navbar";
+import Hero from "@/components/portfolio/Hero";
+import About from "@/components/portfolio/About";
+import Education from "@/components/portfolio/Education";
+import Research from "@/components/portfolio/Research";
+import Publications from "@/components/portfolio/Publications";
+import Experience from "@/components/portfolio/Experience";
+import Skills from "@/components/portfolio/Skills";
+import Contact from "@/components/portfolio/Contact";
+import Footer from "@/components/portfolio/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Dr Fahim Mahbub",
+    jobTitle: "Doctor & Clinical Researcher",
+    email: "mailto:fmahbub96@gmail.com",
+    description:
+      "British GMC-registered doctor and clinical researcher in cardiovascular and metabolic medicine.",
+    identifier: "GMC 7880554",
+    alumniOf: [
+      { "@type": "CollegeOrUniversity", name: "Rangpur Medical College, Rajshahi University" },
+      { "@type": "EducationalOrganization", name: "Dhaka College" },
+    ],
+    worksFor: {
+      "@type": "Hospital",
+      name: "The Barakah General Hospital Ltd",
+    },
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Education />
+        <Research />
+        <Publications />
+        <Experience />
+        <Skills />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
