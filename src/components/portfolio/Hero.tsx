@@ -29,7 +29,7 @@ const Hero = () => {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/85 md:text-xl">
-            British GMC-registered doctor and clinical researcher in cardiovascular
+            GMC-registered doctor and clinical researcher in cardiovascular
             and metabolic medicine — translating clinical observation into evidence
             that improves patient outcomes.
           </p>
