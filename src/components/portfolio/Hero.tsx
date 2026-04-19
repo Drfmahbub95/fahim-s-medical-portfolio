@@ -25,25 +25,27 @@ const Hero = () => {
             <span className="accent-rule bg-accent" /> Doctor · Clinical Researcher
           </span>
 
-          <div className="mt-6 flex items-center gap-5 md:gap-7">
+          <div className="mt-6 flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:gap-7 md:gap-8">
             <div className="group relative shrink-0 animate-float">
               <div
-                className="absolute -inset-2 rounded-full bg-accent/30 blur-xl transition-all duration-700 ease-out group-hover:-inset-3 group-hover:bg-accent/50"
+                className="absolute -inset-3 rounded-full bg-accent/30 blur-2xl transition-all duration-700 ease-out group-hover:-inset-5 group-hover:bg-accent/50"
                 aria-hidden="true"
               />
-              <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-accent/60 shadow-2xl ring-2 ring-primary-foreground/20 transition-transform duration-500 ease-out hover:scale-105 sm:h-24 sm:w-24 md:h-28 md:w-28 lg:h-32 lg:w-32">
-                <img
-                  src={headshot}
-                  alt="Portrait of Dr Fahim Mahbub"
-                  width={256}
-                  height={256}
-                  className="h-full w-full object-cover"
-                  loading="eager"
-                />
+              <div className="relative rounded-full bg-gradient-to-br from-accent via-accent/60 to-primary-glow p-[3px] shadow-2xl transition-transform duration-500 ease-out hover:scale-105">
+                <div className="h-32 w-32 overflow-hidden rounded-full ring-2 ring-primary-foreground/20 sm:h-36 sm:w-36 md:h-40 md:w-40 lg:h-44 lg:w-44">
+                  <img
+                    src={headshot}
+                    alt="Portrait of Dr Fahim Mahbub"
+                    width={352}
+                    height={352}
+                    className="h-full w-full object-cover"
+                    loading="eager"
+                  />
+                </div>
               </div>
             </div>
 
-            <h1 className="font-serif text-4xl font-semibold leading-[1.05] md:text-6xl lg:text-7xl">
+            <h1 className="font-serif text-5xl font-semibold leading-[1.05] md:text-6xl lg:text-7xl">
               Dr Fahim Mahbub
             </h1>
           </div>

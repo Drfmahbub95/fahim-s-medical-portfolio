@@ -9,14 +9,15 @@ const SectionHeading = ({ eyebrow, title, description }: SectionHeadingProps) =>
     <span className="eyebrow">
       <span className="accent-rule" /> {eyebrow}
     </span>
-    <h2 className="mt-4 text-4xl font-semibold leading-tight text-foreground md:text-5xl">
+    <h2 className="mt-4 text-balance text-4xl font-semibold leading-tight text-foreground md:text-5xl">
       {title}
     </h2>
     {description && (
-      <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+      <p className="mt-4 text-balance text-base leading-relaxed text-muted-foreground md:text-lg">
         {description}
       </p>
     )}
+    <div className="mt-6 h-1 w-16 rounded-full bg-gradient-accent" />
   </div>
 );
 
