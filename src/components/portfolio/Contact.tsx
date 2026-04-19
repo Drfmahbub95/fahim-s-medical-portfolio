@@ -1,8 +1,5 @@
-import { Mail, GraduationCap, Download } from "lucide-react";
+import { Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const SCHOLAR_URL = "https://scholar.google.com/";
-const CV_URL = "/cv.pdf";
 
 const Contact = () => (
   <section
@@ -27,18 +24,6 @@ const Contact = () => (
           <a href="mailto:fmahbub96@gmail.com">
             <Mail className="mr-2 h-4 w-4" />
             fmahbub96@gmail.com
-          </a>
-        </Button>
-        <Button asChild size="lg" variant="heroOutline">
-          <a href={CV_URL} download>
-            <Download className="mr-2 h-4 w-4" />
-            Download CV
-          </a>
-        </Button>
-        <Button asChild size="lg" variant="heroOutline">
-          <a href={SCHOLAR_URL} target="_blank" rel="noreferrer">
-            <GraduationCap className="mr-2 h-4 w-4" />
-            Google Scholar
           </a>
         </Button>
       </div>
