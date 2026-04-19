@@ -38,7 +38,7 @@ const Hero = () => {
                     alt="Portrait of Dr Fahim Mahbub"
                     width={352}
                     height={352}
-                    className="h-full w-full object-cover object-[center_15%]"
+                    className="h-full w-full object-cover object-[center_30%]"
                     loading="eager"
                   />
                 </div>
