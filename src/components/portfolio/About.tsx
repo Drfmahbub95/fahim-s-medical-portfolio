@@ -20,16 +20,10 @@ const About = () => (
         <aside className="space-y-6 rounded-lg border border-border bg-card p-6 shadow-card">
           <div>
             <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-              GMC Registration
-            </p>
-            <p className="mt-1 font-serif text-xl text-foreground">7880554</p>
-          </div>
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
               Licences
             </p>
             <p className="mt-1 text-sm text-foreground/85">
-              UK General Medical Council · BMDC (Bangladesh)
+              UK General Medical Council · BMDC
             </p>
           </div>
           <div>
