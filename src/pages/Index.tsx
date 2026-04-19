@@ -19,7 +19,7 @@ const Index = () => {
     email: "mailto:fmahbub96@gmail.com",
     description:
       "GMC-registered doctor and clinical researcher in cardiovascular and metabolic medicine, based in Bangladesh and licensed to practise in the UK.",
-    identifier: "GMC 7880554",
+    
     alumniOf: [
       { "@type": "CollegeOrUniversity", name: "Rangpur Medical College, Rajshahi University" },
       { "@type": "EducationalOrganization", name: "Dhaka College" },

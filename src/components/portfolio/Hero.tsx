@@ -19,8 +19,8 @@ const Hero = () => {
       />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/80 to-primary-glow/70" />
 
-      <div className="container-prose relative z-10 grid min-h-[88vh] grid-cols-1 items-center gap-12 py-24 lg:grid-cols-[1.4fr_1fr]">
-        <div className="max-w-3xl animate-fade-up">
+      <div className="container-prose relative z-10 grid min-h-[88vh] grid-cols-1 items-center gap-10 py-24 lg:grid-cols-[1.7fr_1fr]">
+        <div className="order-2 max-w-3xl animate-fade-up lg:order-1">
           <span className="eyebrow text-accent">
             <span className="accent-rule bg-accent" /> Doctor · Clinical Researcher
           </span>
@@ -59,17 +59,22 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-sm animate-fade-up lg:max-w-md">
-          <div className="absolute -inset-4 rounded-full bg-accent/20 blur-3xl" aria-hidden="true" />
-          <div className="relative overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 shadow-2xl backdrop-blur-sm">
-            <img
-              src={headshot}
-              alt="Portrait of Dr Fahim Mahbub"
-              width={520}
-              height={680}
-              className="h-full w-full object-cover"
-              loading="eager"
+        <div className="order-1 mx-auto w-full max-w-[180px] animate-fade-up sm:max-w-[220px] lg:order-2 lg:mx-0 lg:ml-auto lg:max-w-[260px]">
+          <div className="group relative">
+            <div
+              className="absolute -inset-3 rounded-full bg-accent/25 blur-2xl transition-all duration-700 ease-out group-hover:-inset-4 group-hover:bg-accent/40"
+              aria-hidden="true"
             />
+            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 shadow-2xl backdrop-blur-sm transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_25px_60px_-15px_hsl(var(--accent)/0.5)]">
+              <img
+                src={headshot}
+                alt="Portrait of Dr Fahim Mahbub"
+                width={520}
+                height={680}
+                className="h-full w-full object-cover transition-transform duration-700 ease-out hover:scale-105"
+                loading="eager"
+              />
+            </div>
           </div>
         </div>
       </div>
