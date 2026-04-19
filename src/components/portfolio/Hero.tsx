@@ -1,9 +1,7 @@
 import heroBg from "@/assets/hero-bg.jpg";
-import { Stethoscope, Mail, MapPin, BadgeCheck, GraduationCap, Download } from "lucide-react";
+import headshot from "@/assets/fahim-headshot.jpg";
+import { Stethoscope, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const SCHOLAR_URL = "https://scholar.google.com/";
-const CV_URL = "/cv.pdf";
 
 const Hero = () => {
   return (
@@ -21,7 +19,7 @@ const Hero = () => {
       />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/80 to-primary-glow/70" />
 
-      <div className="container-prose relative z-10 flex min-h-[88vh] flex-col justify-center py-24">
+      <div className="container-prose relative z-10 grid min-h-[88vh] grid-cols-1 items-center gap-12 py-24 lg:grid-cols-[1.4fr_1fr]">
         <div className="max-w-3xl animate-fade-up">
           <span className="eyebrow text-accent">
             <span className="accent-rule bg-accent" /> Doctor · Clinical Researcher
@@ -39,10 +37,6 @@ const Hero = () => {
 
           <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-primary-foreground/80">
             <span className="inline-flex items-center gap-2">
-              <BadgeCheck className="h-4 w-4 text-accent" />
-              GMC Reg. No. 7880554
-            </span>
-            <span className="inline-flex items-center gap-2">
               <Stethoscope className="h-4 w-4 text-accent" />
               MBBS · PLAB
             </span>
@@ -57,23 +51,25 @@ const Hero = () => {
               <a href="#research">View Research</a>
             </Button>
             <Button asChild size="lg" variant="heroOutline">
-              <a href={CV_URL} download>
-                <Download className="mr-2 h-4 w-4" />
-                Download CV
-              </a>
-            </Button>
-            <Button asChild size="lg" variant="heroOutline">
-              <a href={SCHOLAR_URL} target="_blank" rel="noreferrer">
-                <GraduationCap className="mr-2 h-4 w-4" />
-                Google Scholar
-              </a>
-            </Button>
-            <Button asChild size="lg" variant="heroOutline">
               <a href="mailto:fmahbub96@gmail.com">
                 <Mail className="mr-2 h-4 w-4" />
                 Get in touch
               </a>
             </Button>
+          </div>
+        </div>
+
+        <div className="relative mx-auto w-full max-w-sm animate-fade-up lg:max-w-md">
+          <div className="absolute -inset-4 rounded-full bg-accent/20 blur-3xl" aria-hidden="true" />
+          <div className="relative overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 shadow-2xl backdrop-blur-sm">
+            <img
+              src={headshot}
+              alt="Portrait of Dr Fahim Mahbub"
+              width={520}
+              height={680}
+              className="h-full w-full object-cover"
+              loading="eager"
+            />
           </div>
         </div>
       </div>
