@@ -1,6 +1,6 @@
 import heroBg from "@/assets/hero-bg.jpg";
 import headshot from "@/assets/fahim-headshot.jpg";
-import { Stethoscope, Mail, MapPin } from "lucide-react";
+import { Stethoscope, Mail, MapPin, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -75,6 +75,12 @@ const Hero = () => {
               <a href="mailto:fmahbub96@gmail.com">
                 <Mail className="mr-2 h-4 w-4" />
                 Get in touch
+              </a>
+            </Button>
+            <Button asChild size="lg" variant="heroOutline">
+              <a href="/Dr-Fahim-Mahbub-CV.pdf" download>
+                <Download className="mr-2 h-4 w-4" />
+                Download CV
               </a>
             </Button>
           </div>
